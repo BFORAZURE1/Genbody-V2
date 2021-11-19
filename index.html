@@ -17,13 +17,15 @@
     <link rel="stylesheet" href="css/landing_page.css" />
     <!-- Font Awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   </head>
+    
+    
+  </head>
   <body>
     <!--Header Start -->
  
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#"><img src="assests/4.jpeg" width="100px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,6 +34,7 @@
             <li class="nav-item">
               <a class="nav-link"  href="#">INSTRUCTIONS</a>
             </li>
+        
             <li class="nav-item">
               <a class="nav-link" href="#">FAQ</a>
             </li>
@@ -59,11 +62,14 @@
         nucleocapsid protein antigen from SARS-CoV-2 in direct nasopharyngeal
         <br />swab specimens.</span
       >
-      <button class="button" >Product Info</button>
+      <button class="button" data-bs-toggle="modal" data-bs-target="#modal_1" >Product Info</button>
     </div>
 
     <br>
-    <img style="position: absolute;z-index: -1;" src="assests/bg.jpg" width="100%" height="160px"/>
+    <div class="Updates">
+      <img  src="assests/bg-01.jpg" width="100%" height="160px" />
+    </div>
+   
 
         <div class="section">
           <div class="container">
@@ -98,26 +104,41 @@
         <div class="conainer">
          
           <div class="row" style="--bs-gutter-x:0">
-               <div class="col-lg-4 col-sm-12 text-center">
+               <div class="col-lg-4 col-sm-12 text-center" onclick="selectModalContent(1)" data-bs-toggle="modal" data-bs-target="#myModal">
                 <div class="test">
                   <img class="image" src="assests/step-kit.svg" alt="">
-                  <h2 class="text">Step 1</h2>
-                  <p class="text-p">PREPARE THE KIT</p>
+                 
+                   
+                    <div class="text">
+                      <h2>Step 1</h2>
+                      <p>PREPARE THE KIT</p>
+                    </div>
+                
+                 
                 </div>
                </div>
-               <div class="col-lg-4 col-sm-12 text-center">
+               <div class="col-lg-4 col-sm-12 text-center" onclick="selectModalContent(2)" data-bs-toggle="modal" data-bs-target="#myModal">
                 <div class="test">
                   <img class="image" src="assests/graphic-solution.svg" alt="">
-                  <h2 class="text">Step 2</h2>
-                  <p  class="text-p">PREPARE SOLUTION</p>
+                 
+                  <div class="text">
+                    <h2>Step 2</h2>
+                    <p>PREPARE SOLUTION</p>
+                  </div>
                 </div>
               
               </div>
-              <div class="col-lg-4 col-sm-12 text-center">
+              <div class="col-lg-4 col-sm-12 text-center" onclick="selectModalContent(3)" data-bs-toggle="modal" data-bs-target="#myModal">
                 <div class="test text-center">
-                  <img class="image" src="assests/step-timer-wait.svg" alt="">
-                  <h2 class="text">Step 3</h2>
-                  <P  class="text-p">READ TEST RESULT</P>
+                  
+                    <img class="image" src="assests/step-timer-wait.svg" alt="">
+                    <div class="text">
+                      <h2>Step 3</h2>
+                      <P>READ TEST RESULT</P>
+                    </div>
+                   
+                  </div>
+                 
                 </div>
             
               </div>
@@ -139,18 +160,93 @@
         </div>
       </div>
       
-      <div class="FAQ">
+      <div class="FAQ" style="background-image: url('assests/white-01.jpg')">
         <div class="container">
           <div class="row">
             <div class="col-md-6 text-center">
-              <img style=" margin-top: 25%;" src="assests/box.svg" alt="box" />
-              <button class="signin" >Product Info</button>
+              <img style=" margin-top: 30%;" src="assests/box.svg" alt="box" />
+              <button class="signin" >See full FAQ</button>
+              <br><br> <br><br>
             </div>
-            <div class="col-md-6">
-              <h2>The GenBody COVID-19 Ag test is now EUA Authorized.</h2>
+            <div class="col-md-6" style="margin-top: 5%;margin-bottom: 5%;">
+              <h2 style="font-size:36px">The GenBody COVID-19 Ag test is now EUA Authorized.</h2>
               <p>Here are a few things we thought you’d like to know.</p>
               
-              <div class="faq-container">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button style="font-weight: bold; font-size: 16px; color: #4E4E56;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit
+                   </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div style="color:#8a8989;" class="accordion-body">
+                      Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
+                    </div>
+                  </div>
+                </div>
+              
+                
+              
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button  style="font-weight: bold; font-size: 16px; color: #4E4E56;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div style="color:#8a8989;" class="accordion-body">
+                      Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
+                    </div>
+                  </div>
+                </div>
+               
+                
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button  style="font-weight: bold; font-size: 16px; color: #4E4E56;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit
+                   
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div style="color:#8a8989;" class="accordion-body">
+                      Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
+                    </div>
+                  </div>
+                </div>
+            
+               
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button  style="font-weight: bold; font-size: 16px; color: #4E4E56;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div style="color:#8a8989;" class="accordion-body">
+                      Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button  style="font-weight: bold; font-size: 16px; color: #4E4E56;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div style="color:#8a8989;" class="accordion-body">
+                      Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              
+              
+            <!-- <div class="faq-container">
         
                 <div class="faq">
                     <p class="faq-title">
@@ -163,7 +259,7 @@
                     </p>
                     <button class="faq-toggle">
                        <i class="fas fa-chevron-down" ></i>
-                       <i class="fas fa-chevron-up" ></i>  
+                       <i class="fas fa-chevron-up" style="color: #D14086;" ></i>  
                     </button>
                 </div>
         
@@ -178,7 +274,7 @@
                   </p>
                   <button class="faq-toggle">
                      <i class="fas fa-chevron-down" ></i>
-                     <i class="fas fa-chevron-up"></i>
+                     <i class="fas fa-chevron-up" style="color: #D14086;"></i>
                   </button>
               </div>
               <div class="faq">
@@ -192,7 +288,7 @@
                 </p>
                 <button class="faq-toggle">
                    <i class="fas fa-chevron-down" ></i>
-                   <i class="fas fa-chevron-up"></i>  
+                   <i class="fas fa-chevron-up" style="color: #D14086;"></i>  
                 </button>
             </div>
 
@@ -207,7 +303,7 @@
               </p>
               <button class="faq-toggle">
                  <i class="fas fa-chevron-down" ></i>
-                 <i class="fas fa-chevron-up" ></i>  
+                 <i class="fas fa-chevron-up" style="color: #D14086;"></i>  
               </button>
           </div>
 
@@ -217,16 +313,16 @@
             </p>
             <p class="faq-text">
                 Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies.
-
                 De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
             </p>
             <button class="faq-toggle">
                <i class="fas fa-chevron-down" ></i>
-               <i class="fas fa-chevron-up" ></i>  
+               <i class="fas fa-chevron-up" style="color: #D14086;"></i>  
             </button>
           </div>
-            </div>   
+            </div> -->  
             </div>
+           
           </div>
         </div>
       </div>
@@ -235,11 +331,11 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 text-center">
-              <img style="margin-top: -80px;" src="assests/step-kit.svg"/>
+              <img style="margin-top: -46px;" src="assests/dummy.jpg" width="70%"/>
             </div>
             <div class="col-md-6">
-              <p style="color: #FFA27B;">Proudly Manufactured in USA</p>
-              <h2>About GenBody</h2>
+              <p style="color: #FFA27B;font-size: 16px;">Proudly Manufactured in USA</p>
+              <h2 style="font-size: 36px;">About GenBody</h2>
               <p style="font-size: 15px;color: #4E4E56;">GenBody America is the US affiliate of GenBody, Inc., a diversified manufacturer specializes in developing monoclonal antibodies and recombinant antigens, of in vitro diagnostic test for over 70 different human diseases. With over 20 years combined experience in the diagnostic industry and through its vast network between several key institutes, universities, and hospitals, our core strength is in R&D. 
                 <br><br>
                 The GenBody COVID-19 Ag test is manufactured in California and South Korea. The US Production facility has been funded in part by the NIH Rapid Acceleration of Diagnostics (RADxSM) initiative with federal funds from the National Institute of Biomedical Imaging and Bioengineering, National Institutes of Health.</p>
@@ -248,18 +344,19 @@
         </div>
       </div>
 
-      <div class="FAQ">
+      <div class="FAQ" style="background-image: url('assests/white-01.jpg')">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6 text-center">
+          <div class="row" >
+            <div class="col-md-6 text-center" style="margin-bottom: 5%;">
               <img style=" margin-top: 15%;" width="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAclBMVEXMzMwAAADR0dHS0tLV1dW3t7elpaWIiIjAwMCwsLDLy8tbW1t3d3d8fHy/v7/ExMSVlZU6OjoeHh6np6dnZ2ckJCRvb29KSkpVVVWYmJiNjY0XFxcSEhJFRUUrKyuWlpYiIiIzMzNHR0dpaWk+Pj4LCwsebs21AAAE4UlEQVR4nO3Za5eiOBAGYKoSRECIFwSvjHa3//8vbgUEEnBn17M9O8w57/Ohu40YoaxUSjoIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/nzs6UeVYP9AO8KT1/+LdxjP4k/MPHmr34wj1ylpxoI4Kr6+img5nCqHWXr9yHbq7XcIs3CYJZZZqiIK+2k4WKyqa3rK35/4l9HkaWJyuhFVn8WdKOrOlAuiQyk/KvPmR8o1LZ4v4bwiSlel/Pzsng33dP60I9GcgjJQt9KeWE5lqCWftTlQ1p4pVxTZFNcL2pq3plcSxy4mOV12Wsk8fKJNM8Yh7WN5L52UVM4oKD21atMkWXZnp6+0bJ7J6NiOqZjSd86dFxR1MVEpdYtRLehk/+Tb5Zl3uuxDNyfL9jwdHLdDCVX6OaQzCscv/AlD5bK7WKaymyXQm0pCy+shELzdzC9RVLqdjBkq2lOP+2glXpL7O8h0zk0ty6OPSdQfoQ5X+Zu/6mGnO70V7P9HSD8mF5Vs7UrxoqWqu7MbrfPhgVqPL0rWXOjGpOjzRN3txElXr6xpmv526nCbnpJpkoLrajh1ztoa00ik5Hav0scmqRx26algiElJ3cFqZwflebeGbA9zWzzxizThHR25+Tid1Di6OW7O5+d1qvWk+iaPgw6GmATJZd+Ub9Yx2WdkTebD0ZKAM4uJTml6Rrog+ytxs1ritHMeLS9tpqgjpaOYyj5j9+3Q6U9qynKl47TtT6SEeIfvv+dSvs3L1ZzTqm1Y1s5zcZM7HTaXs+ywepolEqWmMofOAtHHm+0Mr3lTWGQZuscXl/dan19NepPpCfH10QyGo5i4jyQosnyklkzalvBZQJ2Y8GLz+MqKmjbNkCq9mJSPecUkedFG6q7b+lmeNJlSn6Yh0ffn/uTERLrhXEsfK4snDeaeJ7Ky8/GY5P6qvVDz9/WkGUnkW4wOfJJ4z+1p2Hc2W/OMnG6qD0dzrifebvscGrp4f99ZjHsrCR7Vo6+GdsdqwyT9SRtD25QNPVtE8eiTUIdZ7Ts8Xg/N0Ec/dD54/YmfUlJeC6kpS28CQ1UYt450kp8mUFcv7hJnCa/bn+xn1Z+ogkYjEpKr04jfnGPT2rt625doNtuLF5QdjRyZa7el44c8Mm4CGqf1nwGmT/8jkj7zw3l67S4Xv1tV7Y4ju8/WXT5J2FvQOg9DE/DdrcNsizp/Dd/7pBeMv+t6vgEfne94lu023KJphofq5J26XThtr2HOfqb0k3f1RKVnpyo1O7oU2b5e872e1dI5+BVfCqC/M8sm8rzpyIau7qc9tGp2+Uz2LqvbdyQMWRdZDjbtvZpH94VSNv7pd4vfyPgh4E86aXujrdEMJXfZRphZh2evwiZOX8Lm8fJ2U78XS4v2aewsSoebdlC2py87pCQks6qw3u2RZmN5XDedQzuYVFSvsuxKdeh9mrn7yCSvph96NrlwqrIoWtW0feadFC46ZFH5oGJOWRLwj9Jr1hcrR9SPFnvapscXN47+wbLsCzSbU7p90L04Jn0ZMdHH5XEv4zllSWD/wzJ6+Po/PvYu9n/9/04ziz9NMzSrJAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgWfwFLyzCJlWZyEQAAAABJRU5ErkJggg==" alt="box" />
-              <h2>Protect Yourself Against COVID-19</h2>
-              <p>Subtitle / Date /Author</p>
+              <h2 style="font-size: 36px;">Protect Yourself Against <br> COVID-19</h2>
+              <p style="font-size: 16px;color: #4E4E56;">Subtitle / Date /Author</p>
             </div>
-            <div class="col-md-6">
+           
+            <div class="col-md-6" style=" margin-top: 5%;">
           <br>
             <div  class="row" style="margin-left: 3%;">
-              <div  class="col-md-6"> 
+              <div  class="col-md-6 "> 
                <div class="protect">
                  <h3>Outbreak
                    <br> Update</h3>
@@ -309,30 +406,31 @@
     <div class="container">
        <div class="row">
           <div class="col-lg-4 col-sm-12">
+           
             <ol class="ol">
-              <li>FAQ Question 1 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit</li>
-              <li>FAQ Question 2 Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit</li>
-              <li>FAQ Question 3 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</li>
-              <li>FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</li>
-              <li>FAQ Question 5 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(1)"> FAQ Question 1 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(2)"> FAQ Question 2 Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(3)"> FAQ Question 3 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(4)"> FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(5)"> FAQ Question 5 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</a></li>
             </ol>
           </div>
           <div class="col-lg-4 col-sm-12">
             <ol class="ol">
-              <li>FAQ Question 1 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit</li>
-              <li>FAQ Question 2 Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit</li>
-              <li>FAQ Question 3 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</li>
-              <li>FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</li>
-              <li>FAQ Question 5 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(1)"> FAQ Question 1 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(2)"> FAQ Question 2 Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(3)"> FAQ Question 3 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(4)"> FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(5)"> FAQ Question 5 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</a></li>
             </ol>
           </div>
           <div class="col-lg-4 col-sm-12">
             <ol class="ol">
-              <li>FAQ Question 1 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit</li>
-              <li>FAQ Question 2 Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit</li>
-              <li>FAQ Question 3 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</li>
-              <li>FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</li>
-              <li>FAQ Question 5 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(1)"> FAQ Question 1 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(2)"> FAQ Question 2 Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(3)"> FAQ Question 3 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(4)"> FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</a></li>
+              <li><a data-bs-toggle="modal" data-bs-target="#faqModal" onclick="selectFaqModalContent(5)"> FAQ Question 5 Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit</a></li>
             </ol>
           </div>
        </div>
@@ -344,7 +442,7 @@
     <div class="container">
       <div class="row">
          <div class="col-lg-4 col-sm-12">
-          <h4 style="color:#BC2F2C">Logo</h4>
+          <img src="assests/4.jpeg" width="100px">
           <br>
           <div class="conta">
             <img class="container__image" src="assests/icon-phone.svg">
@@ -369,25 +467,52 @@
           </div>
        </div>
          <div class="col-lg-4 col-sm-12 text-center">
-          <h4 style="color:#BC2F2C">Corporate Logo</h4>
+          <h4 style="color:#BC2F2C"><img src="assests/4.jpeg" width="100px"> &nbsp Corporate Logo</h4>
           <br>
-           <div id="faq-text">
+          <div id="faq-text">
+          
+            <div id="h6">
             <hr/>
-            <h6 >FAQ</h6>
-            <hr/>
-            <h6>ABOUT US</h6>
-            <hr/>
-            <h6>PRESS</h6>
-            <hr/>
-            <h6>USAGE TERMS</h6>
-            <hr/>
-            <h6>PRACTICING POLICIES</h6>
-            <hr/>
-            <h6>CAREERS</h6>
-            <hr/>
-            <h6>CONTACT</h6>
-            <hr/>
-           </div>  
+             <h6 >FAQ</h6>
+             <hr/>
+            </div>
+           
+            <div id="h6" style="margin-top: -5%;">
+             <hr style="visibility: hidden;"/>
+              <h6 >ABOUT US</h6>
+              <hr/>
+             </div>
+            
+             <div id="h6" style="margin-top: -5%;">
+               <hr style="visibility: hidden;"/>
+           <h6>PRESS</h6>
+           <hr/>
+            </div>
+
+            <div id="h6" style="margin-top: -5%;">
+             <hr style="visibility: hidden;"/>
+           <h6>USAGE TERMS</h6>
+           <hr/>
+            </div>
+
+           <div id="h6" style="margin-top: -5%;">
+             <hr style="visibility: hidden;"/>
+           <h6>PRACTICING POLICIES</h6>
+           <hr/>
+            </div>
+
+           <div id="h6" style="margin-top: -5%;">
+             <hr style="visibility: hidden;"/>
+           <h6>CAREERS</h6>
+           <hr/>
+            </div>
+
+           <div id="h6" style="margin-top: -5%;">
+             <hr style="visibility: hidden;"/>
+           <h6>CONTACT</h6>
+           <hr/>
+            </div>
+          </div>  
          </div>
          <div class="col-lg-4 col-sm-12">
            <h4 style="color:#6e6e70">Receive GenBody Updates</h4>
@@ -411,18 +536,180 @@
       </div>
    </div>
   </div>
+ 
 
-    <script>
-      const toggles=document.querySelectorAll(".faq-toggle")
-    toggles.forEach(toggle=>{
-    toggle.addEventListener("click",()=>{
-        toggle.parentNode.classList.toggle("active")
-    })
-})
-    </script>
+  
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+
+      <!-- Modal body -->
+      <div class="modal-body-large" style="margin-top: -15px;">
+        <i class="fa fa-times" aria-hidden="true" data-bs-dismiss="modal" style="font-size:40px;color: #D14086;float: right;font-weight:700;"></i>
+        <h4 style="color:#BC2F2C"><img src="assests/4.jpeg" width="100px"> &nbsp Testing Kit for COVID-19</h4>
+            
+        <div class="container">
+          <div class="row">
+            <div class="col-5">
+              
+              <div class="contimg">
+                <img src="assests/bg.jpg" alt="Snow" style="    width: 131%;
+                margin-left: -22.5%;
+                height: 100px;">
+                
+                <div class="topleft"  id="head"></div>
+              
+              </div>
+               <div class="conta">
+                <img class="container__image" src="assests/step-kit.svg">
+                <div class="container__text">
+                
+                  <p style="margin-top: 6%;" id="instruction1"></p>
+               </div>
+              </div>
+
+              <div class="conta">
+                <img class="container__image" src="assests/graphic-wash-hands.svg">
+                <div class="container__text">
+                
+                  <p style="margin-top: 6%;" id="instruction2"></p>
+               </div>
+              </div>
+
+              <div class="conta">
+                <img class="container__image" src="assests/graphic-open-swab.svg">
+                <div class="container__text">
+                
+                  <p style="margin-top: 6%;" id="instruction3"></p>
+               </div>
+              </div>
+            </div>
+            <div class="col-7">
+                 <img src="assests/graphic-kit.svg" width="100%" style="margin-top: 20%;"/>
+                 <button  onclick="selectModalContent(0)" id="step-btn"  class="signin">Next Step</button>
+                 <br>
+                 <br>
+                 <div class="row"> 
+                  <div class="col-4"> 
+                    <p style="color: #BC2F2C;">Prepare the Kit</p>
+                    <hr style="border: 2px solid #BC2F2C;width: 110%;">
+                  </div>
+                  <div class="col-4"> 
+                    <p style="color: #D14086;">Prepare Solution</p>
+                    <hr style="border: 2px solid #D14086;width: 110%;">
+                  </div>
+                  <div class="col-4"> 
+                    <p style="color: #FFA27B;">See Test Result</p>
+                    <hr style="border: 2px solid  #FFA27B;width: 110%;">
+                  </div>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+
+    </div>
+  </div>
+</div>
+
+<!-- FAQ MODEL 3-->
+
+  
+
+
+<!-- FAQ Modal 1 -->
+<div class="modal" id="faqModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     
+      <!-- Modal body -->
+      <div class="modal-body-large">
+       
+        <i class="fa fa-times" aria-hidden="true" data-bs-dismiss="modal" style="font-size:40px;color: #D14086;float: right;font-weight:700;"></i>
+        <h2 style="color:#BC2F2C"><img src="assests/4.jpeg" width="100px"> &nbsp Testing Kit for COVID-19</h2>
+        <h2 style="color:#6b6b6d" id="faqHead"></h2>
+        <br><br>
+        <p style="color:#6d6d6d" id="faqBody"></p>
+      </div>
+
+     
+
+    </div>
+  </div>
+</div>
+
+
+
+<!---Product info modal-->
+<div class="modal fade modal_main" id="modal_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal_dialog_620">
+    <div class="modal-content">
+      <div class="modal-body product_modal_body">
+      <i class="fa fa-times" aria-hidden="true" data-bs-dismiss="modal" style="font-size:40px;color: #D14086;float: right;font-weight:700;"></i>
+      <form>
+        <div class="modal_area">
+          <h3>Product Documentation</h3>
+          <p>
+            The GenBody COVID-19 Ag test is FDA EUA authorized.
+            <br/>
+            Refer to the links below. 
+          </p>
+          
+          <div class="modal_fda_list">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="modal_fda_list_item">
+                  <a href="https://www.fda.gov/media/150785/download" target="_blank">
+                    <img src="assests/icons/pdf-2.svg" alt="icon"/>
+                    <span>Approval Letter</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="modal_fda_list_item">
+                  <a href="https://www.fda.gov/media/150788/download" target="_blank">
+                    <img src="assests/icons/pdf-2.svg" alt="icon"/>
+                    <span>IFU</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="modal_fda_list_item">
+                  <a href="https://www.fda.gov/media/150786/download" target="_blank">
+                    <img src="assests/icons/pdf-2.svg" alt="icon"/>
+                    <span>Fact Sheet for HCP</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="modal_fda_list_item">
+                  <a href="https://www.fda.gov/media/150787/download" target="_blank">
+                    <img src="assests/icons/pdf-2.svg" alt="icon"/>
+                    <span>Fact Sheet for Patients</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+
 
     <!-- Optional JavaScript -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/select-data.js"></script>
   </body>
 </html>
