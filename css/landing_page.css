@@ -10,11 +10,15 @@ body {
 }
 
 .navbar {
-  width: "100%";
+  width: 100%;
   background: #ffffff 0% 0% no-repeat padding-box !important;
   box-shadow: 0px 3px 6px #00000029;
   opacity: 1;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
+
 .collapse a {
   text-align: left;
   font: 14px "Roboto", sans-serif;
@@ -135,6 +139,7 @@ body {
 }
 
 .test {
+  overflow: hidden;
   position: relative;
   width: 20em;
   height: 20em;
@@ -149,6 +154,7 @@ body {
 .image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .test:before {
@@ -427,6 +433,8 @@ body {
   width: 200%;
   margin-left: -200px;
   margin-top: 10%;
+  border-radius: 10px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
 
 .modal-content {
@@ -599,6 +607,9 @@ ol li:hover::before {
   padding: 40px 40px 50px;
 }
 .product_modal_body {
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+
   position: relative;
 }
 .modal_close_btn {
@@ -695,6 +706,11 @@ ol li:hover::before {
   .faq-tabs-nav {
     flex-direction: column;
   }
+}
+
+.video-player {
+  border-radius: 5px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
 
 /*************end*************/
