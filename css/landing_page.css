@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+a {
+  text-decoration: none;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -113,14 +116,14 @@ body {
 }
 
 .form-control {
-  background-color: #f1f1f180 !important;
-  border: #f1f1f180 !important;
+  background-color: #f1f1f180;
+  border: 2px solid #f1f1f180;
   border-radius: 5px;
 }
 
 .form-control:hover {
-  background-color: #ffffff !important;
-  border: 2px solid #f1f1f180 !important;
+  background-color: #ffffff;
+  border: 2px solid #f1f1f180;
 }
 .work {
   margin-top: 10%;
@@ -169,18 +172,28 @@ body {
   border: 1px solid #00000029;
 }
 
+.test:hover .text {
+  margin-top: -40px;
+  opacity: 0;
+}
+
 .text {
   font-family: "Roboto", sans-serif;
-
   color: #4e4e56;
   margin: 0;
+  transition: 0.5s;
   position: absolute;
 }
 
-.text:hover {
-  display: none;
+.text:hover:after {
+  visibility: visible;
+  position: absolute;
+  transform: translateY(100%);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: attr(text);
 }
-
 .text-p {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
@@ -333,6 +346,7 @@ body {
   padding: 20px;
   width: 100%;
   height: 240px;
+  cursor: pointer;
 }
 
 .protect h3 {
