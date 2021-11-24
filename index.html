@@ -157,79 +157,97 @@
               </video>   -->
    <!-- <iframe class="video-player" width="100%" height="430" src="https://youtu.be/AR4xttApzGg">
 </iframe> -->
-<iframe class="video-player" width="100%" height="430" src="https://www.youtube.com/embed/AR4xttApzGg" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+<iframe class="video-player" width="100%" height="430" src="https://www.youtube.com/embed/AR4xttApzGg?rel=0&amp;controls=0&amp&amp;showinfo=0&amp;modestbranding=1" frameborder="0""  ></iframe>
             </div>
           </div>
         </div>
       </div>
       
-      <div id="FAQ" class="FAQ" style="background-image: url('assests/white-01.jpg')">
+    <div id="FAQ" class="FAQ" style="background-image: url('assests/white-01.jpg')">
         <div class="container">
           <div class="row">
             <div class="col-md-6 text-center">
-              <img style=" margin-top: 30%;" src="assests/box.svg" alt="box" />
-              <button class="signin" >See full FAQ</button>
-              <br><br> <br><br>
+              <img class="top-faq-image" src="assests/step-open-swab.svg"  id="top-faq-image" alt="box" /><br><br>
+              <button class="signin mt-4" >See full FAQ</button>
+              <br><br> 
             </div>
             <div class="col-md-6" style="margin-top: 5%;margin-bottom: 5%;">
               <h2 style="font-size:36px">The GenBody COVID-19 Ag test is now EUA Authorized.</h2>
               <p>Here are a few things we thought you’d like to know.</p>
               
-             <div class="accordion-wrapper">
-  <div class="accordion">
-    <input type="radio" name="radio-a" id="check1" >
-    <label class="accordion-label" for="check1">FAQ Question 1 Lorem ipsum dolor sit amet, consectetur
-adipiscing elit Lorem ipsum dolor sit amet, consectetur
-adipiscing elit</label>
-    <div class="accordion-content">
-      <p>Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
-</p>
-    </div>
-  </div>
-  <div class="accordion">
-    <input type="radio" name="radio-a" id="check2">
-    <label class="accordion-label" for="check2">FAQ Question 2 Lorem ipsum dolor sit amet, consectetur
-adipiscing elit Lorem ipsum dolor sit amet, consectetur
-adipiscing elit</label>
-    <div class="accordion-content">
-       <p>Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
-</p>
-    </div>
-  </div>
-  <div class="accordion">
-    <input type="radio" name="radio-a" id="check3">
-    <label class="accordion-label" for="check3">FAQ Question 3 Lorem ipsum dolor sit amet, consectetur
-adipiscing elit Lorem ipsum dolor sit amet, consectetur
-adipiscing elit</label>
-    <div class="accordion-content">
-      <p>Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
-</p>
-    </div>
-  </div>
-
-  <div class="accordion">
-    <input type="radio" name="radio-a" id="check4">
-    <label class="accordion-label" for="check4">FAQ Question 4 Lorem ipsum dolor sit amet, consectetur
-adipiscing elit Lorem ipsum dolor sit amet, consectetur
-adipiscing elit</label>
-    <div class="accordion-content">
-      <p>Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
-</p>
-    </div>
-  </div>
-
-  <div class="accordion">
-    <input type="radio" name="radio-a" id="check5">
-    <label class="accordion-label" for="check5">FAQ Question 5 Lorem ipsum dolor sit amet, consectetur
-adipiscing elit Lorem ipsum dolor sit amet, consectetur
-adipiscing elit</label>
-    <div class="accordion-content">
-      <p>Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
-</p>
-    </div>
-  </div>
-
-</div>
+              <div class="accordion " id="accordionExample">
+                <div class="accordion-item "   >
+                  <h2 class="accordion-header" id="headingOne">
+                    <button onclick="selectTopFaqImageUrl(1)"  style="font-weight: bold; font-size: 16px; color: #4E4E56;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit
+                   </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div style="color:#8a8989;" class="accordion-body">
+                      Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
+                    </div>
+                  </div>
+                </div>
+              
+                
+              
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button onclick="selectTopFaqImageUrl(2)"    style="font-weight: bold; font-size: 16px; color: #4E4E56;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div style="color:#8a8989;" class="accordion-body">
+                      Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
+                    </div>
+                  </div>
+                </div>
+               
+                
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button onclick="selectTopFaqImageUrl(3)"    style="font-weight: bold; font-size: 16px; color: #4E4E56;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit
+                   
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div style="color:#8a8989;" class="accordion-body">
+                      Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
+                    </div>
+                  </div>
+                </div>
+            
+               
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button onclick="selectTopFaqImageUrl(4)"    style="font-weight: bold; font-size: 16px; color: #4E4E56;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div style="color:#8a8989;" class="accordion-body">
+                      Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button  onclick="selectTopFaqImageUrl(5)"   style="font-weight: bold; font-size: 16px; color: #4E4E56;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      FAQ Question 4 Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div style="color:#8a8989;" class="accordion-body">
+                      Composer est un outil mis en place pour la communauté des développeurs de PHP. A l’image de « npm » pour nodejs ou « bundler » pour ruby, il sert de gestionnaire de dépendance entre applications et librairies. De façon plus précise, Composer permet de gérer pour chaque projet, la liste des modules et bibliothèques nécessaires à son fonctionnement ainsi que leurs versions. Il est utilisable via la console en ligne de commande. De plus, il permet de mettre en place un système d’autoload pour les bibliothèques compatibles.
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              
               
             <!-- <div class="faq-container">
         

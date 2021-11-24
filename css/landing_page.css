@@ -44,6 +44,7 @@ body {
   width: 100%;
   height: 400px;
   margin: 40px 0px;
+  margin-top: 140px;
 }
 .box p {
   text-align: center;
@@ -228,11 +229,10 @@ body {
 }
 
 .FAQ {
-  height: 500px;
   background-position: center;
-  height: fit-content;
   background-size: cover;
   margin-top: 10%;
+  background-attachment: fixed;
 }
 
 .FAQ h2 {
@@ -711,6 +711,13 @@ ol li:hover::before {
 .video-player {
   border-radius: 5px;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+.top-faq-image {
+  margin-top: 30%;
+  width: 500px;
+  height: 500px;
+  transition: visibility 0.3s;
+  transition-timing-function: ease-in;
 }
 
 /*************end*************/
