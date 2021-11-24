@@ -59,12 +59,12 @@ let stepsData = [
 let faqData = [
   {
     heading: "What is the intended use of the GenBody COVID-19 Ag test?",
-    body: " The GenBody COVID-19 Ag is an immunochromatographic rapid diagnostic test (RDT) intended for the qualitative detection of nucleocapsid protein antigen from SARS-CoV-2 in direct nasopharyngeal (NP) or anterior nasal (AN) swab specimens from individuals who are suspected of COVID-19 by their healthcare provider within the first six days of symptom onset."
+    body: "The GenBody COVID-19 Ag is an immunochromatographic rapid diagnostic test (RDT) intended for the qualitative detection of nucleocapsid protein antigen from SARS-CoV-2 in direct nasopharyngeal (NP) or anterior nasal (AN) swab specimens from individuals who are suspected of COVID-19 by their healthcare provider within the first six days of symptom onset."
   },
   {
     heading:
       "What certificate is required to administer the GenBody COVID-19 Ag test? Who can administer the test?",
-    body: "The only certificate the administering healthcare provider is required to have is the CLIA Certificate of Waiver. Anyone who is associated with the CLIA Waiver holder (and minimally trained??) can administer the test. There is no mandatory operator certificate involved with our test kits. "
+    body: "The only certificate the administering healthcare provider is required to have is the CLIA Certificate of Waiver. Anyone who is associated with the CLIA Waiver holder (and minimally trained??) can administer the test. There is no mandatory operator certificate involved with our test kits."
   },
   {
     heading: "Can the GenBody COVID-19 Ag test be used for self testing?",
@@ -81,10 +81,10 @@ let faqData = [
 ];
 
 const topFaqsImageUrl = [
-  "assests/step-open-swab.svg",
-  "assests/step-result.svg",
-  "assests/step-solution.svg",
-  "assests/step-kit.svg",
+  "assests/steps_menu/step-kit.svg",
+  "assests/faq_assets/CLIA-LOGO.png",
+  "assests/faq_assets/nurse-g434d9c4a4_1280.jpg",
+  "assests/steps_menu/step-results.svg",
   "assests/step-drip.svg"
 ];
 
