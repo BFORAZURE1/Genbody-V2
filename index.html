@@ -626,31 +626,29 @@
             <div class="col-5">
               
               <div class="contimg">
-                <img src="assests/bg.jpg" alt="Snow" style="    width: 131%;
-                margin-left: -22.5%;
-                height: 100px;">
+                <img src="assests/bg-01.jpg" alt="Snow" style="width: 100%;height: 100%;"/>
                 
                 <div class="topleft"  id="head"></div>
               
               </div>
-               <div class="conta">
-                <img class="container__image" src="assests/step-kit.svg">
+               <div class="conta" onclick="selectHeroImage(1)">
+                <img class="container__image" id="instructionImg1" >
                 <div class="container__text">
                 
                   <p style="margin-top: 6%;" id="instruction1"></p>
                </div>
               </div>
 
-              <div class="conta">
-                <img class="container__image" src="assests/graphic-wash-hands.svg">
+              <div class="conta" onclick="selectHeroImage(2)">
+                <img class="container__image" id="instructionImg2"  >
                 <div class="container__text">
                 
                   <p style="margin-top: 6%;" id="instruction2"></p>
                </div>
               </div>
 
-              <div class="conta">
-                <img class="container__image" src="assests/graphic-open-swab.svg">
+              <div class="conta" onclick="selectHeroImage(3)">
+                <img class="container__image" id="instructionImg3"  >
                 <div class="container__text">
                 
                   <p style="margin-top: 6%;" id="instruction3"></p>
@@ -658,7 +656,7 @@
               </div>
             </div>
             <div class="col-7">
-                 <img src="assests/graphic-kit.svg" width="100%" style="margin-top: 20%;"/>
+                 <img  id='heroImage' width="100%" style="margin-top: 20%;"/>
                  <button  onclick="selectModalContent(0)" id="step-btn"  class="signin">Next Step</button>
                  <br>
                  <br>

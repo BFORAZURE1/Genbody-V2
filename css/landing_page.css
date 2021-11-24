@@ -444,14 +444,19 @@ body {
 
 .contimg {
   position: relative;
-  text-align: left;
+  text-align: center;
   color: white;
+  width: 131%;
+  margin-left: -22.5%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .topleft {
   position: absolute;
-  top: 8px;
-  left: 16px;
+
   font-size: 30px;
   font-weight: normal;
 }

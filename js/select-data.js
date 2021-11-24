@@ -1,18 +1,32 @@
 let currentStep = 0;
+let activeStep = 0;
 let stepsData = [
   {
     heading: "Preparation",
+    instruction1menuImg: "assests/steps_menu/step-wash-hands.svg",
+    instruction2menuImg: "assests/steps_menu/step-kit.svg",
+    instruction3menuImg: "assests/steps_menu/step-label.svg",
+    instruction1heroImg: "assests/steps_hero/graphic-wash-hands.svg",
+    instruction2heroImg: "assests/steps_hero/graphic-kit.svg",
+    instruction3heroImg: "assests/steps_hero/graphic-label.svg",
     instruction1:
       "Sanitize your hands and work station.  Gloves are recommended before material preparation. ",
     instruction2:
       "Prepare the test device, nasal swab, extraction tube, dropper tip, and extraction solution.",
     instruction3:
       "Open the test device pouch and label the device with the patient identification",
+
     button: "Next Step",
     button_backward: "Previous Step"
   },
   {
     heading: "Specimen Collection",
+    instruction1menuImg: "assests/steps_menu/step-drip.svg",
+    instruction2menuImg: "assests/steps_menu/step-swab.svg",
+    instruction3menuImg: "assests/steps_menu/step-solution.svg",
+    instruction1heroImg: "assests/steps_hero/graphic-drip.svg",
+    instruction2heroImg: "assests/steps_hero/graphic-swab.svg",
+    instruction3heroImg: "assests/steps_hero/graphic-solution.svg",
     instruction1:
       "Add the Extraction Solution to the fill line indicated on the extraction tube.",
     instruction2:
@@ -24,6 +38,13 @@ let stepsData = [
   },
   {
     heading: "Test ",
+    instruction1menuImg: "assests/steps_menu/step-test.svg",
+    instruction2menuImg: "assests/steps_menu/step-result.svg",
+    instruction3menuImg: "assests/steps_menu/step-dispose.svg",
+    instruction1heroImg: "assests/steps_hero/graphic-test.svg",
+    instruction2heroImg: "assests/steps_hero/graphic-kit.svg",
+    instruction3heroImg: "assests/steps_hero/graphic-dispose.svg",
+
     instruction1:
       "Add 4 drops of the sample mixture to the center of the sample well of the test device. The monitor strip will gradually turn red as the fluid flows through the strip.",
     instruction2:
@@ -81,6 +102,7 @@ const selectModalContent = step => {
         currentStep = step;
       }
     }
+    activeStep = step;
 
     if (step > 0 && step < 4) {
       document.getElementById("head").innerHTML =
@@ -91,9 +113,32 @@ const selectModalContent = step => {
         stepsData[Number(step) - 1].instruction2;
       document.getElementById("instruction3").innerHTML =
         stepsData[Number(step) - 1].instruction3;
+      document.getElementById("instructionImg1").src =
+        stepsData[Number(step) - 1].instruction1menuImg;
+      document.getElementById("instructionImg2").src =
+        stepsData[Number(step) - 1].instruction2menuImg;
+      document.getElementById("instructionImg3").src =
+        stepsData[Number(step) - 1].instruction3menuImg;
       document.getElementById("step-btn").innerHTML =
         stepsData[Number(step) - 1].button;
+      document.getElementById("heroImage").src =
+        stepsData[Number(step) - 1].instruction1heroImg;
     }
+  }
+};
+
+const selectHeroImage = menuStepNumber => {
+  if (menuStepNumber === 1) {
+    document.getElementById("heroImage").src =
+      stepsData[Number(activeStep) - 1].instruction1heroImg;
+  }
+  if (menuStepNumber === 2) {
+    document.getElementById("heroImage").src =
+      stepsData[Number(activeStep) - 1].instruction2heroImg;
+  }
+  if (menuStepNumber === 3) {
+    document.getElementById("heroImage").src =
+      stepsData[Number(activeStep) - 1].instruction3heroImg;
   }
 };
 
