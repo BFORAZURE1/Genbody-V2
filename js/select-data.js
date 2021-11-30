@@ -58,26 +58,63 @@ let stepsData = [
 
 let faqData = [
   {
-    heading: "What is the intended use of the GenBody COVID-19 Ag test?",
-    body: "The GenBody COVID-19 Ag is an immunochromatographic rapid diagnostic test (RDT) intended for the qualitative detection of nucleocapsid protein antigen from SARS-CoV-2 in direct nasopharyngeal (NP) or anterior nasal (AN) swab specimens from individuals who are suspected of COVID-19 by their healthcare provider within the first six days of symptom onset."
+    heading: "What is COVID-19?",
+    body: "a.	COVID-19 is caused by the SARS-CoV-2 virus which is a new virus in humans causing a contagious respiratory illness. COVID-19 can present with a mild to severe illness, although some people infected with COVID-19 may have no symptoms at all. Older adults and people of any age who have underlying medical conditions have a higher risk of severe illness from COVID-19. Serious outcomes of COVID-19 include hospitalization and death. The SARS-CoV-2 virus can be spread to others not just while one is sick, but even before a person shows signs or symptoms of being sick (e.g. fever, coughing, difficulty breathing, etc.)."
   },
   {
-    heading:
-      "What certificate is required to administer the GenBody COVID-19 Ag test? Who can administer the test?",
-    body: "The only certificate the administering healthcare provider is required to have is the CLIA Certificate of Waiver. Anyone who is associated with the CLIA Waiver holder (and minimally trained??) can administer the test. There is no mandatory operator certificate involved with our test kits."
+    heading: "Where can we get the most updated information on COVID-19",
+    body: "The most up-to-date information on COVID-19 is available at the CDC General webpage: https://www.cdc.gov/COVID19"
   },
   {
-    heading: "Can the GenBody COVID-19 Ag test be used for self testing?",
-    body: "No, our test is FDA authorized under EUA only for Point of Care sites for professional use. There must be an operator to administer the test on a patient."
+    heading: "Does the test detect new SARS-CoV-2 Variants?",
+    body: "Yes."
   },
   {
-    heading: "How often should I perform the External Quality Controls?",
-    body: "It is recommended that external control testing be performed with each new operator and before using a new lot or shipment of GenBody COVID-19 Ag kits to confirm the expected Quality Control (QC) results. The frequency of additional QC tests should be determined according to your laboratory's standard QC procedures and local, State and Federal regulations or accreditation requirements."
+    heading: "What are known potential risks for using the tests",
+    body: "Possible discomfort or other complication taht can happen during sample collection and possible incorrect test result"
   },
   {
-    heading: "What are the storage and testing temperature conditions?",
-    body: "The GenBody COVID-19 Ag test can be stored in 2°-30°C (35.6°-86°F). Before test administration and quality control testing, let the test materials equilibrate to room temperature at 15°-30°C (59°-86°F). Do not expose the test devices and extraction solutions to temperatures outside of room temperature during testing."
-  }
+    heading: "What is serial testing?",
+    body: "Serial testing is when one person is tested for COVID-19 more than once, as antigen test may be less sensitive than other COVID-19 tests and false results may occur. Repeated testing may identify result s more acurately than a single test. <br> After a single test, additional molecular COVID-19 test may be necessary depending on individual risk factors and test results."
+  },
+  {
+    heading: "What is the difference between antigen tests and other COVID-19 tests?",
+    body: "There are different kinds of test for diagnosing COVID-19. PCR tests or molecular tests detect genetic material from the virus. Antigen tests detect protein from the virus. Antigen tests are more specific for the virus being tested for but is less sensitive than the molecular test. This means that a positive result is highly accurate, but a negative result does not rule out infections. If the patient has recieved two negative tests within a 24 to 36 hours period, but is still experiencing COVID-19 symptoms such as coughing, shortness of breath, or fever, you should discuss the need for additional testing with the patient."
+  },
+  {
+    heading: "Is this test FDA-approved or cleared?",
+    body: "No. This test is not yet approved or cleared by the United States FDA. FDA may issue an Emergency Use Authorization (EUA) when certain criteria are met, which includes that there are no adequate, approved, available alternatives. The EUA for this test is supported by the Secretary of Health and Human Services (HHS’s) declaration that circumstances exist to justify the emergency use of in vitro diagnostics for the detection and/or diagnosis of the virus that causes COVID-19."
+  },
+  {
+    heading: "What are the approved alternatives?",
+    body: "a.	There are no approved available alternative antigen tests."
+  },
+  {
+    heading: "How many times should the patient be tested to ensure accuracy?",
+    body: "If the patient's first test is negative, you should test again in 24 to 46 hours to ensure the best accuracy."
+  },
+  {
+    heading: "Is the test reusable?",
+    body: "No. Each test is intended for single use and is to be disposed of after the test is complete."
+  },
+  {
+    heading: "Where is the test made?",
+    body: "The GenBody COVID-19 Rapid Ag Test is manufacatured in California, USA."
+  },
+  {
+    heading: "How accurate is GenBody Antigen Rapid Test?",
+    body: "GenBody Antigen Rapid Tests were compared to molecular tests (PCR) that were authorized by the FDA for SARS-CoV-2 assay to determine test performance. We have correctly identified 92% sensitivity and 99% specificity (false positive against false negative)"
+  },
+  {
+    heading: "What do I do if I have a positive result?",
+    body: "If you have a positive test result, it is very likely that you have COVID-19 because protein from the virus were founding your sample. Therefore, it is also likely that you may be placed in isolation to avoid spreading the virus to others. There is a very small chance that this test can give a positive result that is wrong or false positive. Should you test positive with the GenBody Antigen Rapid Test, you should self-islate and seek follow-up care with your healthcare provider as additional testing may be necessary."
+  },
+  {
+    heading: "What do I do next if I have a negative test result?",
+    body: "A negative test result means that protein from the virus that causes the COVID-19 were not found in your sample. It is possible for this test to give a negative result that is incorrect. The amount of antigen in a sample may decrease the longer you have symptoms of infection. In symptomatic people, specimens collected after you have had symptoms for more than seven days may be more likely to be negative compared to a molecular assay. If you test negative and continue to experience COVID-19 like symptoms of fever, cough, and shortness of breath, you should seek follow up care with your healthcare provider and they may suggest you need another test to determine if you have contracted the virus causing COVID-19."
+  },
+
+
 ];
 
 const topFaqsImageUrl = [
