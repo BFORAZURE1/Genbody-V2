@@ -78,7 +78,8 @@ let faqData = [
     body: "Serial testing is when one person is tested for COVID-19 more than once, as antigen test may be less sensitive than other COVID-19 tests and false results may occur. Repeated testing may identify result s more acurately than a single test. <br> After a single test, additional molecular COVID-19 test may be necessary depending on individual risk factors and test results."
   },
   {
-    heading: "What is the difference between antigen tests and other COVID-19 tests?",
+    heading:
+      "What is the difference between antigen tests and other COVID-19 tests?",
     body: "There are different kinds of test for diagnosing COVID-19. PCR tests or molecular tests detect genetic material from the virus. Antigen tests detect protein from the virus. Antigen tests are more specific for the virus being tested for but is less sensitive than the molecular test. This means that a positive result is highly accurate, but a negative result does not rule out infections. If the patient has recieved two negative tests within a 24 to 36 hours period, but is still experiencing COVID-19 symptoms such as coughing, shortness of breath, or fever, you should discuss the need for additional testing with the patient."
   },
   {
@@ -112,9 +113,7 @@ let faqData = [
   {
     heading: "What do I do next if I have a negative test result?",
     body: "A negative test result means that protein from the virus that causes the COVID-19 were not found in your sample. It is possible for this test to give a negative result that is incorrect. The amount of antigen in a sample may decrease the longer you have symptoms of infection. In symptomatic people, specimens collected after you have had symptoms for more than seven days may be more likely to be negative compared to a molecular assay. If you test negative and continue to experience COVID-19 like symptoms of fever, cough, and shortness of breath, you should seek follow up care with your healthcare provider and they may suggest you need another test to determine if you have contracted the virus causing COVID-19."
-  },
-
-
+  }
 ];
 
 const topFaqsImageUrl = [
@@ -126,20 +125,50 @@ const topFaqsImageUrl = [
 ];
 
 const selectModalContent = step => {
-  if (currentStep > 2) {
+  let previousBtn = document.getElementById("previous-btn");
+  let btnDiv = document.getElementById("btn-div");
+  if (currentStep > 2 && step !== -1) {
     $("#myModal").modal("hide");
     $(".modal-backdrop").hide();
     currentStep = 0;
   } else {
-    if (currentStep < 3) {
+    if (currentStep < 3 || step === -1) {
       if (step === 0) {
         step = currentStep + 1;
         currentStep += 1;
+      } else if (step === -1) {
+        step = currentStep - 1;
+        currentStep -= 1;
       } else {
         currentStep = step;
       }
     }
     activeStep = step;
+    if (activeStep > 1) {
+      previousBtn.style.display = "block";
+      btnDiv.classList.remove("justify-content-end");
+      btnDiv.classList.add("justify-content-between");
+    } else {
+      previousBtn.style.display = "none";
+      btnDiv.classList.add("justify-content-end");
+      btnDiv.classList.remove("justify-content-between");
+    }
+    if (activeStep === 1) {
+      document.getElementById("indicator-1").style.opacity = 1;
+      document.getElementById("indicator-2").style.opacity = 0.4;
+      document.getElementById("indicator-3").style.opacity = 0.4;
+    }
+
+    if (activeStep === 2) {
+      document.getElementById("indicator-1").style.opacity = 0.4;
+      document.getElementById("indicator-2").style.opacity = 1;
+      document.getElementById("indicator-3").style.opacity = 0.4;
+    }
+    if (activeStep === 3) {
+      document.getElementById("indicator-1").style.opacity = 0.4;
+      document.getElementById("indicator-2").style.opacity = 0.4;
+      document.getElementById("indicator-3").style.opacity = 1;
+    }
 
     if (step > 0 && step < 4) {
       document.getElementById("head").innerHTML =

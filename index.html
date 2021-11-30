@@ -104,7 +104,7 @@
         <div class="conainer">
          
           <div class="row" style="--bs-gutter-x:0">
-               <div class="col-lg-4 col-sm-12 text-center" onclick="selectModalContent(1)" data-bs-toggle="modal" data-bs-target="#myModal">
+               <div class="col-lg-4 col-sm-12 text-center mb-4" onclick="selectModalContent(1)" data-bs-toggle="modal" data-bs-target="#myModal">
                 <div class="test">
                   <img class="image" src="assests/step-kit.svg" alt="">
                  
@@ -117,7 +117,7 @@
                  
                 </div>
                </div>
-               <div class="col-lg-4 col-sm-12 text-center" onclick="selectModalContent(2)" data-bs-toggle="modal" data-bs-target="#myModal">
+               <div class="col-lg-4 col-sm-12 text-center mb-4" onclick="selectModalContent(2)" data-bs-toggle="modal" data-bs-target="#myModal">
                 <div class="test">
                   <img class="image"  src="assests/graphic-solution.svg" alt="">
                  
@@ -148,7 +148,7 @@
        
       <div class="video">
         <div class="container">
-          <div class="row">f
+          <div class="row">
             <div class="col-md-8 offset-md-2">
               <!-- <video width="100%" height="100%"  controls>
                 <source src="https://drive.google.com/file/d/1UzoTjA_um18qzir0NSv2CjrId8ROKtrU/view?usp=sharing" type="video/mp4">
@@ -514,7 +514,7 @@
 
   <div id="CONTACT" class="footer">
     <div class="container">
-      <div class="row">
+      <div class="row w-100 d-flex justify-content-between align-items-center">
          <div class="col-lg-4 col-sm-12">
           <img src="assests/4.jpeg" width="100px">
           <br>
@@ -584,7 +584,7 @@
             </div>
           </div>  
          </div>
-         <div class="col-lg-4 col-sm-12">
+         <!-- <div class="col-lg-4 col-sm-12">
            <h4 style="color:#6e6e70">Receive GenBody Updates</h4>
            <br>
           <form class="row">
@@ -602,7 +602,7 @@
               <button   class="signin  pull-right">Sign Me Up!</button>
             </div>
           </form>
-         </div>
+         </div> -->
       </div>
    </div>
   </div>
@@ -635,7 +635,7 @@
                 <img class="container__image" id="instructionImg1" >
                 <div class="container__text">
                 
-                  <p style="margin-top: 6%;" id="instruction1"></p>
+                  <p class="step_instruction"  id="instruction1"></p>
                </div>
               </div>
 
@@ -643,7 +643,7 @@
                 <img class="container__image" id="instructionImg2"  >
                 <div class="container__text">
                 
-                  <p style="margin-top: 6%;" id="instruction2"></p>
+                  <p class="step_instruction"   id="instruction2"></p>
                </div>
               </div>
 
@@ -651,27 +651,30 @@
                 <img class="container__image" id="instructionImg3"  >
                 <div class="container__text">
                 
-                  <p style="margin-top: 6%;" id="instruction3"></p>
+                  <p class="step_instruction"   id="instruction3"></p>
                </div>
               </div>
             </div>
             <div class="col-7">
-                 <img  id='heroImage' width="100%" style="margin-top: 20%;"/>
-                 <button  onclick="selectModalContent(0)" id="step-btn"  class="signin">Next Step</button>
+                 <img  id='heroImage' height="430px" style="margin-top: 20%;"width="100%" />
+                 <div id="btn-div" class="d-flex justify-content-end  w-100">
+                   <button  onclick="selectModalContent(-1)" class="signin" style="display: none;" id="previous-btn">Previous Step</button>
+                  <button  onclick="selectModalContent(0)" id="step-btn"    class="signin">Next Step</button></div>
                  <br>
                  <br>
                  <div class="row"> 
                   <div class="col-4"> 
                     <p style="color: #BC2F2C;">Prepare the Kit</p>
-                    <hr style="border: 2px solid #BC2F2C;width: 110%;">
+                    <div class="active-step-indicator" id="indicator-1" style="background-color:#bc2f2c;"></div>
                   </div>
                   <div class="col-4"> 
                     <p style="color: #D14086;">Prepare Solution</p>
-                    <hr style="border: 2px solid #D14086;width: 110%;">
+                    <div style=" background-color: #D14086;" id="indicator-2" class="active-step-indicator"></div>
                   </div>
                   <div class="col-4"> 
                     <p style="color: #FFA27B;">See Test Result</p>
-                    <hr style="border: 2px solid  #FFA27B;width: 110%;">
+                    <div style=" background-color: #FFA27B;" id="indicator-3" class="active-step-indicator" ></div>
+               
                   </div>
                  </div>
             </div>
