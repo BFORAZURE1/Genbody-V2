@@ -118,10 +118,10 @@ let faqData = [
 
 const topFaqsImageUrl = [
   "assests/steps_menu/step-kit.svg",
-  "assests/faq_assets/CLIA-LOGO.png",
-  "assests/faq_assets/nurse-g434d9c4a4_1280.jpg",
-  "assests/steps_menu/step-results.svg",
-  "assests/step-drip.svg"
+  "assests/faq_assets/genbody-assets.png",
+  "assests/faq_assets/doc-asset.svg",
+  "assests/faq_assets/positive-negative-control-icon.png",
+  "assests/termperature_icon.png"
 ];
 
 const selectModalContent = step => {
