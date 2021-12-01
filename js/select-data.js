@@ -98,7 +98,7 @@ let faqData = [
   {
     index: 8,
     heading: "What are the approved alternatives?",
-    body: "a.	There are no approved available alternative antigen tests."
+    body: "There are no approved available alternative antigen tests."
   },
   {
     index: 9,
