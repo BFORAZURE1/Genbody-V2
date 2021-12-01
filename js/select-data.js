@@ -59,15 +59,15 @@ let stepsData = [
 let faqData = [
   {
     heading: "What is COVID-19?",
-    body: "a.	COVID-19 is caused by the SARS-CoV-2 virus which is a new virus in humans causing a contagious respiratory illness. COVID-19 can present with a mild to severe illness, although some people infected with COVID-19 may have no symptoms at all. Older adults and people of any age who have underlying medical conditions have a higher risk of severe illness from COVID-19. Serious outcomes of COVID-19 include hospitalization and death. The SARS-CoV-2 virus can be spread to others not just while one is sick, but even before a person shows signs or symptoms of being sick (e.g. fever, coughing, difficulty breathing, etc.)."
+    body: "COVID-19 is caused by the SARS-CoV-2 virus which is a new virus in humans causing a contagious respiratory illness. COVID-19 can present with a mild to severe illness, although some people infected with COVID-19 may have no symptoms at all. Older adults and people of any age who have underlying medical conditions have a higher risk of severe illness from COVID-19. Serious outcomes of COVID-19 include hospitalization and death. The SARS-CoV-2 virus can be spread to others not just while one is sick, but even before a person shows signs or symptoms of being sick (e.g. fever, coughing, difficulty breathing, etc.)."
   },
   {
     heading: "Where can we get the most updated information on COVID-19",
-    body: "The most up-to-date information on COVID-19 is available at the CDC General webpage: https://www.cdc.gov/COVID19"
+    body: "The most up-to-date information on COVID-19 is available at the CDC General webpage: https://www.cdc.gov/COVID19."
   },
   {
     heading: "Does the test detect new SARS-CoV-2 Variants?",
-    body: "Yes."
+    body: "Yes, The tests has two indirect pieces of evidence that indicate the GenBody COVID-19 Rapid Antigen Test performs well against the Delta variant. First, during laboratory testing, there were no changes in our calculated limit of detection. Second, we performed our anterior nasal trials in July, during which time the Delta variant was noted to be rampant. Our data showed improvment in sensitivity related to our nasopharyngeal trials which is a strong indictation that the Delta variant does not impact the performance of the tests. The Omicron variant was just recently discovered and no trials have yet to be conducted. "
   },
   {
     heading: "What are known potential risks for using the tests",
@@ -113,7 +113,51 @@ let faqData = [
   {
     heading: "What do I do next if I have a negative test result?",
     body: "A negative test result means that protein from the virus that causes the COVID-19 were not found in your sample. It is possible for this test to give a negative result that is incorrect. The amount of antigen in a sample may decrease the longer you have symptoms of infection. In symptomatic people, specimens collected after you have had symptoms for more than seven days may be more likely to be negative compared to a molecular assay. If you test negative and continue to experience COVID-19 like symptoms of fever, cough, and shortness of breath, you should seek follow up care with your healthcare provider and they may suggest you need another test to determine if you have contracted the virus causing COVID-19."
-  }
+  },
+  {
+    heading: "Where can I find the instructions for GenBody Antigen Rapid Tests?",
+    body: "You can download our English Instructions here: https://www.fda.gov/media/150788/download"
+  },
+  {
+    heading: "Will the test hurt?",
+    body: "No, the gentle nasal swab is not sharp and it should not hurt. Only the lower part of the nostril should be swabbed. If the patient feels pain, please stop the test immediately."
+  },
+  {
+    heading: "What if the patient receives a positive result?",
+    body: "A positive result means that it is very likely you have COVID-19 and very important to instruct the patient to isolate themselves at home to avoid spreading the virus to others. There is a very small chance that this test can give positive results that are wrong. Please instruct the patient to follow CDC quarantine guidelines which can be found here: https://www.cdc.gov/coronavirus/2019-ncov/your-health/quarantine-isolation.html"
+  },
+  {
+    heading: "What do I do if my patient receives a negative test result?",
+    body: "A negative test result means that protein from the virus that causes the COVID-19 wer enot found in the patient's sample. It is possible for this test to give anegative result that is incorrect. The amoutn of antigen in a sample may decrease the longer you have symptoms of infection. In symptomatic people, specimen collected after you have had symptoms for more than seven days may be more likely to be negative compared to a molecular assay. If your patient tests negative and continues to experience COVID-19 like symptoms of fever, cough, and shortness of breath, please instruct your patient to seek follow up care with their healthcare provider and they may suggest additional tests to determine if your patient have contracted the virus causing COVID-19. For more information about when to test, visit: https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/testing.html"
+  },
+  {
+    heading: "What do I do if my patient receives a negative test result?",
+    body: "If your patient received a second negative result in 24 to 36 hours after the first negative test, then yoiur patient are likely not infected with COVID-19. If you have symptoms, you may have a different virus or type of infection. You may have COVID-19  and still get a negative result, If the test was not performed correctly, such as not swabbing correctly or not waiting 15 minutes for test results. The level of antigen from the COVID-19 virus was below the test limits. If your patient have had signs and symptoms of COVID-19 for more than 7 days. This means your patient can still have COVID-19 even though the test was negative. Please advice your patient to see their healthcare provider. Their healthcare provider will consider the test result along with all other aspect of their medical history, including symptoms specific to COVID-19 and decide how to care for them."
+  },
+  {
+    heading: "What do I do if there is no control line when reading the result of my test?",
+    body: "If you don't have a control line on the result of your test, your test is invalid. Re-test with a new GenBody COVID-19 Ag and call the GenBody customer service at 888-552-5204 or email customer support at ts@genbodyamerica.com"
+  },
+  {
+    heading: "Is the extraction solution in the bottle harmful?",
+    body: "No, the solution in the tube contains potentially harmful chemicals, however studies have shown them to be non-toxic at the elvel contained in the solution. The extraction solution should only be used as directed. Do not ingest, keep out of reach of children, and avoid contact wiht skin and eyes"
+  },
+  {
+    heading: "Who can be tested?",
+    body: "Individuals over 6 years of age with or without symptoms can be tested, as needed, regardless of vaccination status"
+  },
+  {
+    heading: "Should people who were vaccinated use thsi test?",
+    body: "Yes, even vaccinated individuals may carry the virus that could infect others, testing along with vaccincations are important tools to prevent spreading of COVID-19. Frequent tesing is another way to reduce further spreading of the virus."
+  },
+  {
+    heading: "What is the requirement for purchasing GenBody COVID-19 Rapid Antigen Test?",
+    body: "An authorized CLIA number and address with documentation is necessary before purchases can be shipped. Purchased tests can only be shipped to the designated address associated with the CLIA number."
+  },
+  {
+    heading: "Who can we contact to purchase GenBody products",
+    body: "For questions regarding GenBody Products, please contact us at our website or email us at ts@genbodyamerica.com"
+  },
 ];
 
 const topFaqsImageUrl = [
