@@ -747,3 +747,9 @@ ol li:hover::before {
   margin-top: 6%;
 }
 /*************end*************/
+
+/* **************daniel-changes*************** */
+#INSTRUCTIONS {
+  padding-left: 5em;
+  padding-right: 5em;
+}
