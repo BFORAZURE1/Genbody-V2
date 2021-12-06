@@ -124,7 +124,7 @@ let faqData = [
   {
     index: 13,
     heading: "What do I do if I have a positive result?",
-    body: "If you have a positive test result, it is very likely that you have COVID-19 because protein from the virus were founding your sample. Therefore, it is also likely that you may be placed in isolation to avoid spreading the virus to others. There is a very small chance that this test can give a positive result that is wrong or false positive. Should you test positive with the GenBody Antigen Rapid Test, you should self-islate and seek follow-up care with your healthcare provider as additional testing may be necessary."
+    body: "If you have a positive test result, it is very likely that you have COVID-19 because protein from the virus were founding your sample. Therefore, it is also likely that you may be placed in isolation to avoid spreading the virus to others. There is a very small chance that this test can give a positive result that is wrong or false positive. Should you test positive with the GenBody Antigen Rapid Test, you should self-isolate and seek follow-up care with your healthcare provider as additional testing may be necessary."
   },
   {
     index: 14,
